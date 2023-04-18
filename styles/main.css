@@ -80,6 +80,12 @@ header>img {
   border-bottom: 1px dotted #ffffffa6;
 }
 
+.link:hover {
+  cursor: pointer;
+  color: #48b0d1;
+  border-bottom: 1px dotted #48b0d1;
+}
+
 #tabButtons>div {
   border: 1px solid #fff;
   height: 3rem;
@@ -91,6 +97,11 @@ header>img {
   justify-content: center;
   align-items: center;
   border-radius: 3px;
+}
+
+#tabButtons>div:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.247);
 }
 
 @media (min-width: 768px) {
