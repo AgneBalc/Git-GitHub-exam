@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  background-image: linear-gradient(#1b1b1857, #1b1b1880), url('../images/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 6rem 0.5rem;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/bg-overlay.png');
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header>img {
+  width: 6rem;
+  padding: 1.7rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.verticalLine {
+  height: 3rem;
+  width: 1px;
+  background-color: #fff;
+  align-self: center;
+}
+
+#text {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 2rem 0;
+}
+
+#text>h1 {
+  font-weight: 500;
+  font-size: 1.9rem;
+  letter-spacing: 5px;
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+
+#text>p {
+  font-weight: 300;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-align: justify;
+  line-height: 2rem;
+  color: #ffffffa6;
+}
+
+.link {
+  border-bottom: 1px dotted #ffffffa6;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: #48b0d1;
+  border-bottom: 1px dotted #48b0d1;
+}
+
+#tabButtons>div {
+  border: 1px solid #fff;
+  height: 3rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #ffffffa6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+#tabButtons>div:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.247);
+}
+
+@media (min-width: 768px) {
+  #text>h1 {
+    font-size: 2.7rem;
+  }
+
+  #tabButtons {
+    display: flex;
+    justify-content: center;
+  }
+
+  #tabButtons>div {
+    flex: 1;
+    max-width: 150px;
+  }
+
+  body {
+    padding: 9rem 3rem;
+  }
+
+  #text>p {
+    text-align: center;
+  }
+}
