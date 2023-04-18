@@ -106,6 +106,51 @@ header>img {
   background-color: rgba(255, 255, 255, 0.247);
 }
 
+.tabModal {
+  background-color: #1b1f23d2;
+  position: absolute;
+  inset: 0;
+  margin: 1rem;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow: scroll;
+}
+
+.tabModal>h1 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 0.5rem;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  align-self: flex-start;
+  padding-bottom: 0.57em;
+}
+
+.tabModal>p {
+  color: #ffffffa6;
+  line-height: 2;
+  font-size: 0.9rem;
+}
+
+.closeButton {
+  position: absolute;
+  width: 1.4rem;
+  top: 0.7rem;
+  right: 0.7rem;
+}
+
+.tabModal>video,
+.tabModal>img {
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
 @media (min-width: 768px) {
   #text>h1 {
     font-size: 2.7rem;
