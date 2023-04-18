@@ -78,6 +78,8 @@ header>img {
 
 .link {
   border-bottom: 1px dotted #ffffffa6;
+  text-decoration: none;
+  color: #ffffffa6;
 }
 
 .link:hover {
