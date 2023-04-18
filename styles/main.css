@@ -17,8 +17,7 @@ body {
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: #fff;
-  padding: 0.5rem;
+  padding: 6rem 0.5rem;
 }
 
 body::before {
@@ -35,8 +34,8 @@ header {
 }
 
 header>img {
-  width: 4.7rem;
-  padding: 1.3rem;
+  width: 6rem;
+  padding: 1.7rem;
   border-radius: 50%;
   border: 1px solid #fff;
 }
@@ -48,7 +47,7 @@ header>img {
 }
 
 .verticalLine {
-  height: 2rem;
+  height: 3rem;
   width: 1px;
   background-color: #fff;
 }
@@ -61,10 +60,11 @@ header>img {
 
 #text>h1 {
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   letter-spacing: 5px;
   text-align: center;
   padding-bottom: 2rem;
+  color: #fff;
 }
 
 #text>p {
@@ -72,9 +72,23 @@ header>img {
   font-size: 0.9rem;
   letter-spacing: 2px;
   text-align: justify;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  color: #ffffffa6;
 }
 
 .link {
-  border-bottom: 1px dotted #fff;
+  border-bottom: 1px dotted #ffffffa6;
+}
+
+#tabButtons>div {
+  border: 1px solid #fff;
+  height: 3rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #ffffffa6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
 }
