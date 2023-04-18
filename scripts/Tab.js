@@ -32,7 +32,15 @@ export default class Tab {
     this.par2 = document.createElement('p');
     this.par2.innerText = this.props.text2;
 
-    this.tabModal.append(this.closeButton, this.tabTitle, this.image, this.par1, this.par2)
+    this.tabModal.append(this.closeButton, this.tabTitle, this.image, this.par1, this.par2);
+    this.closeTab();
     return this.tabModal;
+  }
+  closeTab() {
+    this.closeButton.addEventListener('click', () => {
+      this.tabModal.remove();
+      document.querySelector('header').classList.remove('hidden');
+      document.querySelector('main').classList.remove('hidden');
+    })
   }
 }
